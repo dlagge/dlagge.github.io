@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Philippe's Punkteexperiment</title>
+	</head>
+	<body>
+		<audio id="sound" src="bestsound.wav"></audio>
+		<center>
+		<div id="startbildschirm">	
+			<center><h1>Herzlich willkommen im Klickspiel</h1></center>
+			<center><button id="start">start</button></center>
+			<center><h3>klicke immer auf das Bild, wenn du einen (oder mehrere) gr&uuml;ne Punkt(e) siehst und einen hohen Ton h&ouml;rst!</h3></center>
+		</div>
+		</center>
+		<center>
+		<div id="liste">
+			<h2>deine Resultate:</h2> 
+			<table>
+			<tbody>
+				<tr><td>1. Bild: </td><td id="bild1">falsch</td></tr>
+				<tr><td>2. Bild: </td><td id="bild2">richtig</td></tr>
+				<tr><td>3. Bild: </td><td id="bild3">richtig</td></tr>
+				<tr><td>4. Bild: </td><td id="bild4">falsch</td></tr>
+			</tbody>
+			</table>
+			<center><div id="pro"><h4>du hattest &nbsp</h4><h4 id="prozent"></h4><h4> % richtig</h4></div></center>
+			<button id="reflesh">zur&uuml;ck an den Start</button>
+		</div>
+		</center>
+
+	<img class="images" id="img1" src="img/img1.png">
+	<img class="images" id="img2" src="img/img2.png">
+	<img class="images" id="img3" src="img/img3.png">
+	<img class="images" id="img4" src="img/img4.png">
+	
+
+	</body>
+	
+</html>

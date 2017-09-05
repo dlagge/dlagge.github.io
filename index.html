@@ -1,42 +1,290 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Philippe's Punkteexperiment</title>
+		<title>Startseite</title>
+		<link href="style1.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="jquery.cookie.js" type="text/javascript"></script>
+		<script src="scriptbackofen.js" type="text/javascript"></script>
 	</head>
-	<body>
-		<audio id="sound" src="bestsound.wav"></audio>
-		<center>
-		<div id="startbildschirm">	
-			<center><h1>Herzlich willkommen im Klickspiel</h1></center>
-			<center><button id="start">start</button></center>
-			<center><h3>klicke immer auf das Bild, wenn du einen (oder mehrere) gr&uuml;ne Punkt(e) siehst und einen hohen Ton h&ouml;rst!</h3></center>
-		</div>
-		</center>
-		<center>
-		<div id="liste">
-			<h2>deine Resultate:</h2> 
-			<table>
-			<tbody>
-				<tr><td>1. Bild: </td><td id="bild1">falsch</td></tr>
-				<tr><td>2. Bild: </td><td id="bild2">richtig</td></tr>
-				<tr><td>3. Bild: </td><td id="bild3">richtig</td></tr>
-				<tr><td>4. Bild: </td><td id="bild4">falsch</td></tr>
-			</tbody>
-			</table>
-			<center><div id="pro"><h4>du hattest &nbsp</h4><h4 id="prozent"></h4><h4> % richtig</h4></div></center>
-			<button id="reflesh">zur&uuml;ck an den Start</button>
-		</div>
-		</center>
+	<body oncontextmenu="return false">
+	<center><button class="bu" id="hi">&#9587</button></center>
+	<center>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="warenkorb.html">&#128722 Warenkorb &nbsp (in CHF) &nbsp<span id="gesamtsumme">0</span></a></li>
+				<li><a> &#127873 Gutscheine</a></li>
+				<li><a href="Kontakt.html"> &#128100 Kontakt</a></li>
+				<li>
+					<a  id="uns"> &#128101 Über uns</a>
+					
+					<ul class="sub" id="submenu1">
+						<li><a  id="team" href="Team.html">Team</a></li>
+						<li><a id="FAQ" href="">FAQ</a></li>
+					</ul>
+				</li>
+				<li>
+					<a id="sprachauswahl" href="#"> &#128172 Sprachen</a>
+					<ul class="sub" id="submenu2">
+						<li><a href="">DE</a></li>
+						<li><a href="">ENG</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 
-	<img class="images" id="img1" src="img/img1.png">
-	<img class="images" id="img2" src="img/img2.png">
-	<img class="images" id="img3" src="img/img3.png">
-	<img class="images" id="img4" src="img/img4.png">
+	</header>
+	</center>
+		<center><button class="bu" id="sho">&#8942</button></center>
+		
+		<center><h1>Domi's Backofen</h1></center>
+		
+		<div class="zeitenbox">
+			
+				<h2>Lieferung</h2>
+			<hr width="50%" color="#ea8d8d">
+				<h3>geliefert wird jeden Tag von</h3>
+				<h3><br>10:00 - 14:00<br>16:00 - 20:00</h3>
+				<br><h3>im ganzen Bezirk Baden</h3>
+				<center><button class="button" OnClick="location.href='#menu'">Menu</button></center>	
+		</div>
+
+
+		<div class="speisekarte">
+		<button class="ordner" id="menu">Pizzen</button>
+            		<button  class="ordner" OnClick="location.href='getränke.html'+'#menu'">Getränke</button>
+		
+		<center><button class="gestalten" OnClick="location.href='pizzagestalten.html'">eigene Pizza gestalten!</button></center>	
+		</div>
+		
+
 	
+		<table id="table1" cellpadding=20 align=center>
+		<tbody>
+		
+		<tr>
+			<td>
+				<div class="lol">
+				<center><img src="img/blechpizza cherry tomate.jpg" OnClick="location.href='produkt1.html'"></center>
+				<br><h4>Blechpizza mit Cherrytomaten</h4></br><br><h4>19.- CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen1">hinzufügen</button></center>
+				<div class="box" id="box1">
+					<center><button class="del" id="loeschen1">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val1"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins1" type="button"></p>
+							<p class="minus" id="minuseins1" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+				
+			</td>
+			<td>
+				<div class="lol">
+				<center><img src="img/focaccia tomaten.jpg" OnClick="location.href='produkt2.html'"></center>
+				<br><h4>Focaccia Tomaten</h4></br><br><h4>15.- CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen2">hinzufügen</button></center>
+				<div class="box" id="box2">
+					<center><button class="del" id="loeschen2">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val2"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins2" type="button"></p>
+							<p class="minus" id="minuseins2" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="lol">
+				<center><img src="img/mini calzone.jpg" OnClick="location.href='produkt3.html'"></center>
+				<br><h4>Mini Calzone</h4></br><br><h4>9.- CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen3">hinzufügen</p2></button></center>
+				<div class="box" id="box3">
+					<center><button class="del" id="loeschen3">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val3"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins3" type="button"></p>
+							<p class="minus" id="minuseins3" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+			<td>
+				<div class="lol">
+				<center><img src="img/pizz'wich chorizo.jpg" OnClick="location.href='produkt4.html'"></center>
+				<br><h4>Pizz'which Chorizo</h4></br><br><h4>7.50 CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen4">hinzufügen</p2></button></center>
+				<div class="box" id="box4">
+					<center><button class="del" id="loeschen4">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val4"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins4" type="button"></p>
+							<p class="minus" id="minuseins4" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="lol">
+				<center><img src="img/pizz'wich funghi.jpg" OnClick="location.href='produkt5.html'"></center>
+				<br><h4>Pizz'which Funghi</h4></br><br><h4>7.50 CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen5">hinzufügen</p2></button></center>
+				<div class="box" id="box5">
+					<center><button class="del" id="loeschen5">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val5"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins5" type="button"></p>
+							<p class="minus" id="minuseins5" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+			<td>
+				<div class="lol">
+				<center><img src="img/pizz'wich margherita.jpg" OnClick="location.href='produkt6.html'"></center>
+				<br><h4>Pizz'which Margherita</h4></br><br><h4>7.50 CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen6">hinzufügen</p2></button></center>
+				<div class="box" id="box6">
+					<center><button class="del" id="loeschen6">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val6"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins6" type="button"></p>
+							<p class="minus" id="minuseins6" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="lol">
+				<center><img src="img/pizz'wich prosciutto.jpg" OnClick="location.href='produkt7.html'"></center>
+				<br><h4>Pizz'which Prosciutto</h4></br><br><h4>7.50 CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen7">hinzufügen</p2></button></center>
+				<div class="box" id="box7">
+					<center><button class="del" id="loeschen7">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val7"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins7" type="button"></p>
+							<p class="minus" id="minuseins7" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
+			<td>
+				<div class="lol">
+				<center><img src="img/steinofen-pizza margherita.jpg" OnClick="location.href='produkt8.html'"></center>
+				<br><h4>Steinofen-Pizza Margherita</h4></br><br><h4>26.- CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen8">hinzufügen</p2></button></center>
+				<div class="box" id="box8">
+					<center><button class="del" id="loeschen8">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val8"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins8" type="button"></p>
+							<p class="minus" id="minuseins8" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>	
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="lol">
+				<center><img src="img/steinofen-pizza prosciutto.jpg" OnClick="location.href='produkt9.html'"></center>
+				<br><h4>Steinofen-Pizza Prosciutto</h4></br><br><h4>28.- CHF</h4></br>
+				<center><br><button class="hinzu" id="hinzufuegen9">hinzufügen</p2></button></center>
+				<div class="box" id="box9">
+					<center><button class="del" id="loeschen9">löschen</button></center>
+					<br><br><br>
+					<center>
+					<div class="stuck">
+						<h6>Stück:</h6><h6 id="val9"></h6>
+						<br>
+						<div class="count">
+							<p class="plus" id="pluseins9" type="button"></p>
+							<p class="minus" id="minuseins9" type="button"></p>
+						</div>
+					</div>
+					</center>
+					
+				</div>
+				</div>
+			</td>
 
+		</tr>
+
+		</tbody>
+		</table>		
+						
+		</div>
+
+		<center>
+		<div class="oben">
+		<button id="oben" OnClick="location.href='#menu'"> &#11014 nach oben</h4></button>
+		</div>
+		</center>
+
+		
 	</body>
-	
 </html>

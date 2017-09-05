@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Startseite</title>
+		<link href="style5.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="jquery.cookie.js" type="text/javascript"></script>
+		<script src="scriptbackofen.js" type="text/javascript"></script>
+	</head>
+	<body oncontextmenu="return false">
+	<script>
+	$(document).ready(function() {
+		checkSize();
+		$(window).resize(checkSize);
+
+		
+
+	});
+
+	function checkSize() {
+			if($(".sum").css("margin-top") == "-180px") {
+				$(".go").hide();
+			
+			} else {
+				$(".go").show();
+			}
+		}	
+	</script>
+
+
+
+		<div class="ges">
+			<div>Gesamtsumme: </div><span id="gesamtsumme" style="float: left;"></span><div>CHF</div>
+		</div>
+
+		<div class="box" id="box1">
+			<p class="delete" id="loeschen1">&#10007</p>
+			<h3>Blechpizza mit Cherrytomaten</h3>
+			<br><br><br>
+			<center><img src="img/blechpizza cherry tomate.jpg" OnClick="location.href='produkt1.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val1"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins1" type="button"></p>
+				<p class="minus" id="minuseins1" type="button"></p>
+			</div>
+			<p class="go" id="go1"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe1"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+		
+		<div class="box" id="box2">
+			<p class="delete" id="loeschen2">&#10007</p>
+			<h3>Focaccia Tomaten</h3>
+			<br><br><br>
+			<center><img src="img/focaccia tomaten.jpg" OnClick="location.href='produkt2.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val2"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins2" type="button"></p>
+				<p class="minus" id="minuseins2" type="button"></p>
+			</div>
+			<p class="go" id="go2"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe2"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box3">
+			<p class="delete" id="loeschen3">&#10007</p>
+			<h3>Mini Calzone</h3>
+			<br><br><br>
+			<center><img src="img/mini calzone.jpg" OnClick="location.href='produkt3.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val3"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins3" type="button"></p>
+				<p class="minus" id="minuseins3" type="button"></p>
+			</div>
+			<p class="go" id="go3"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe3"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box4">
+			<p class="delete" id="loeschen4">&#10007</p>
+			<h3>Pizz'which Chorizo</h3>
+			<br><br><br>
+			<center><img src="img/pizz'wich chorizo.jpg" OnClick="location.href='produkt4.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val4"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins4" type="button"></p>
+				<p class="minus" id="minuseins4" type="button"></p>
+			</div>
+			<p class="go" id="go4"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe4"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+		
+		<div class="box" id="box5">
+			<p class="delete" id="loeschen5">&#10007</p>
+			<h3>Pizz'which Funghi</h3>
+			<br><br><br>
+			<center><img src="img/pizz'wich funghi.jpg" OnClick="location.href='produkt5.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val5"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins5" type="button"></p>
+				<p class="minus" id="minuseins5" type="button"></p>
+			</div>
+			<p class="go" id="go5"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe5"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box6">
+			<p class="delete" id="loeschen6">&#10007</p>
+			<h3>Pizz'which Margherita</h3>
+			<br><br><br>
+			<center><img src="img/pizz'wich margherita.jpg" OnClick="location.href='produkt6.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val6"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins6" type="button"></p>
+				<p class="minus" id="minuseins6" type="button"></p>
+			</div>
+			<p class="go" id="go6"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe6"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box7">
+			<p class="delete" id="loeschen7">&#10007</p>
+			<h3>Pizz'which Prosciutto</h3>
+			<br><br><br>
+			<center><img src="img/pizz'wich prosciutto.jpg" OnClick="location.href='produkt7.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val7"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins7" type="button"></p>
+				<p class="minus" id="minuseins7" type="button"></p>
+			</div>
+			<p class="go" id="go7"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe7"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box8">
+			<p class="delete" id="loeschen8">&#10007</p>
+			<h3>Steinofen-Pizza Margherita</h3>
+			<br><br><br>
+			<center><img src="img/steinofen-pizza margherita.jpg" OnClick="location.href='produkt8.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val8"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins8" type="button"></p>
+				<p class="minus" id="minuseins8" type="button"></p>
+			</div>
+			<p class="go" id="go8"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe8"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box9">
+			<p class="delete" id="loeschen9">&#10007</p>
+			<h3>Steinofen-Pizza Prosciutto</h3>
+			<br><br><br>
+			<center><img src="img/steinofen-pizza prosciutto.jpg" OnClick="location.href='produkt9.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val9"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins9" type="button"></p>
+				<p class="minus" id="minuseins9" type="button"></p>
+			</div>
+			<p class="go" id="go9"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe9"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box10">
+			<p class="delete" id="loeschen10">&#10007</p>
+			<h3>Cola</h3>
+			<br><br><br>
+			<center><img src="img/Cola.jpg" OnClick="location.href='produkt10.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val10"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins10" type="button"></p>
+				<p class="minus" id="minuseins10" type="button"></p>
+			</div>
+			<p class="go" id="go10"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe10"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+		
+		<div class="box" id="box11">
+			<p class="delete" id="loeschen11">&#10007</p>
+			<h3>Fanta</h3>
+			<br><br><br>
+			<center><img src="img/Fanta.jpg" OnClick="location.href='produkt11.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val11"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins11" type="button"></p>
+				<p class="minus" id="minuseins11" type="button"></p>
+			</div>
+			<p class="go" id="go11"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe11"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box12">
+			<p class="delete" id="loeschen12">&#10007</p>
+			<h3>Sprite</h3>
+			<br><br><br>
+			<center><img src="img/Sprite.jpg" OnClick="location.href='produkt12.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val12"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins12" type="button"></p>
+				<p class="minus" id="minuseins12" type="button"></p>
+			</div>
+			<p class="go" id="go12"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe12"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		<div class="box" id="box13">
+			<p class="delete" id="loeschen13">&#10007</p>
+			<h3>Wasser ohne Kohlensäure</h3>
+			<br><br><br>
+			<center><img src="img/Wasser.jpg" OnClick="location.href='produkt13.html'"></center>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val13"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins13" type="button"></p>
+				<p class="minus" id="minuseins13" type="button"></p>
+			</div>
+			<p class="go" id="go13"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+		
+			<div class="sum">
+				<div class="su" id="summe13"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+
+		
+		<div class="box" id="box100">
+			<p class="delete" id="lös">&#10007</p>
+			<h3>selbstgestaltete Pizza</h3>
+			<br><br><br><br>
+			<div class="stuck">Stück: &nbsp</div><div class="stuck" id="val100"></div>
+			<br>
+			<div class="pfeile">
+				<p class="plus" id="pluseins100" type="button"></p>
+				<p class="minus" id="minuseins100" type="button"></p>
+			</div>
+			<p class="go" id="go100"  type="button">zurück auf 1 Stück</p>
+			<br><br><br><br><br>
+
+		
+			<div class="sum" style="margin-top: 30px;">
+				<div class="su" id="eigenePizzaKosten"></div>
+				<div>&nbsp CHF</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+

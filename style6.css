@@ -1,0 +1,276 @@
+body{
+	margin: auto;
+	max-width: 1000px;
+	height: 1000px;
+}
+
+.chf{
+	margin-top: 40px;
+	font-family: Calibri Light;
+	font-size: 17px;
+	color: grey;
+}
+
+.som{
+	font-family: Calibri Light;
+	font-size: 17px;
+	color: grey;
+	text-align: center;
+	width: 200px;
+	
+}
+
+.böxlein{
+	width: 170px;
+	margin-right: 50px;
+	
+}
+.boxes{
+	font-family: Calibri Light;
+	font-size: 16px;
+	color: grey;
+	width: 200px;
+}
+
+.kreuzchen{
+	float: right;
+	margin-top: -40px;
+	background: white;
+	border: 1px solid white;
+}
+
+.kreuzchen:hover{
+	border: 1px dashed grey;
+}
+
+
+#zutatenverwaltung{
+	padding: 5px;
+	margin-top: 20px;
+	background: pink;
+	border: 2px solid white;
+	border-radius: 100px;
+	text-align: center;
+	color: white;
+	font-family: Calibri Light;
+	font-size: 19px;
+	padding: 8px;
+	-moz-box-shadow: 0 0 20px #ccc;
+	-webkit-box-shadow: 0 0 20px #ccc;
+	box-shadow: 0px 0px 20px #ccc;
+	opacity: 1;
+}
+
+#zutatenverwaltung:hover {
+	transform: scale(1.1);
+	transition: ease-in-out all 300ms;
+	
+}
+
+.kosten{
+	margin-left: -20px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	font-family: Calibri Light;
+	font-size: 17px;
+	color: grey;
+	float: left;
+	width: 400px;
+}
+
+
+#eigenePizzaKosten{
+	margin-right: 146px;
+}
+
+
+img{
+	width: 100%;
+	max-width: 640px;
+	margin-left: -20px;
+}
+
+.images{
+	position: absolute;
+}
+
+
+
+h1{
+	color: grey;
+	font-family: French Script MT, sans-serif;
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.knöpfe{
+	margin-right: 20px;
+	width: 180px;
+	height: 500px;
+	float: right;	
+}
+
+.auswahl{
+	height: 50px;
+	width: 180px;
+	margin-top: 20px;
+	background: green;
+	border: 2px solid white;
+	text-align: center;
+	color: white;
+	font-family: Calibri Light;
+	font-size: 25px;
+	padding: 8px;
+	-moz-box-shadow: 0 0 20px #ccc;
+	-webkit-box-shadow: 0 0 20px #ccc;
+	box-shadow: 0px 0px 20px #ccc;
+	opacity: 1;
+	
+}
+
+.auswahl:hover {
+	transform: scale(0.9);
+	transition: ease-in-out all 300ms;
+	
+}
+
+.tabellen {
+	margin-top: 450px;
+	margin-left: 30px;
+}
+
+.zutaten {
+	border: 2px solid #4be2f5;
+	background: #4be2f5;
+	color: white;
+	font-family: Calibri Light;
+	font-size: 25px;
+	padding: 8px;
+	width: 200px;
+}
+
+.zutaten:hover {
+	border: 2px dashed #5f91ef;
+}
+
+
+.loe {
+	border: 2px solid #5f91ef;
+	background: #5f91ef;
+	color: white;
+	font-family: Calibri Light;
+	font-size: 25px;
+	padding: 8px;
+	width: 200px;
+}
+
+.loe:hover {
+	border: 2px dashed #4be2f5;
+}
+
+.zut{
+	width: 300px;
+}
+
+@media 
+only screen and (max-width: 860px){
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		
+	}
+	body{
+		max-width: 540px;
+	}
+	.knöpfe{
+		
+		margin-top: 450px;
+		margin-right: -30px;
+	}	
+	.auswahl{
+		width: 130px;
+		font-size: 16px;
+	}
+	td{
+		width: 130px;
+		margin-top: 20px;
+	}
+	
+	.zutaten{
+		font-size: 16px;
+		width: 135px;
+	}	
+	.loe{
+		font-size: 16px;
+		width: 135px;
+	}
+	.tabellen{
+		margin-top: 475px;
+		margin-left: 20px;
+	}
+
+	.kosten{
+		margin-left: 20px;
+	}
+	
+	.som{
+		margin-left: 40px;
+	}
+	
+	
+
+}
+
+
+
+@media 
+only screen and (max-width: 550px){
+	.tabellen{
+		margin-top: 325px;
+	}
+	
+	.knöpfe{
+		width: 95px;
+		margin-top: 300px;
+		margin-right: 90px;
+	}
+	.auswahl{
+		margin-bottom: -20px;
+	}
+	.zutaten{
+		margin-top: -2px;
+	}
+	.loe{
+		margin-top: -5px;
+	}
+
+	img{
+		margin-left: 0px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

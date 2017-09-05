@@ -1,0 +1,51 @@
+h1{
+	color: grey;
+	font-family: French Script MT, sans-serif;
+	font-size: 5em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+h2{
+	text-align: center;
+	color: grey;
+	font-family: Calibri Light;
+	font-size: 1.1em;
+	display: table;
+}
+
+h3{
+	color: grey;
+	font-family: Calibri Light;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 100px;
+}
+
+img{
+	width: 145px;
+	max-width: 100%;
+}
+
+.box{
+	background: #ffeded;
+	width: 1000px;
+	max-width: 100%;
+	
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+
+
+
+
+
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style6.css" rel="stylesheet" type="text/css">
+		<title>Pizza selber gestalten</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="jquery.cookie.js" type="text/javascript"></script>
+		<script src="scriptbackofen.js" type="text/javascript"></script>
+	</head>
+	<body oncontextmenu="return false">
+	<h1>Gestalte deine eigene Pizza</h1>
+	<button id="feertig">meine Pizza ist fertig</button>
+	<center><button id="zutatenverwaltung">Zutaten verwalten</button></center>
+	</center>
+	<center>
+	<div class="zut">
+	<div class="chf">in CHF</div>
+	<center>
+	<div class="böxlein">
+			<div class="boxes" id="boxes1"><p id="p1">Tomatenpüree &nbsp &nbsp &nbsp &nbsp 1<p><button class="kreuzchen" id="kreuzchen1">&#9587</button></div>
+			<div class="boxes" id="boxes2"><p id="p2">Bärlauchpesto &nbsp &nbsp &nbsp &nbsp 1</p><button class="kreuzchen" id="kreuzchen2">&#9587</button></div>
+			<div class="boxes" id="boxes3"><p id="p3">Mozarella &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen3">&#9587</button></div>
+			<div class="boxes" id="boxes4"><p id="p4">Emmentaler &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen4">&#9587</button></div>
+			<div class="boxes" id="boxes5"><p id="p5">Edamer &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen5">&#9587</button></div>
+			<div class="boxes" id="boxes6"><p id="p6">Parmesan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen6">&#9587</button></div>
+			<div class="boxes" id="boxes7"><p id="p7">Schinken &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2.5</p><button class="kreuzchen" id="kreuzchen7">&#9587</button></div>
+			<div class="boxes" id="boxes8"><p id="p8">Salami &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2.5</p><button class="kreuzchen" id="kreuzchen8">&#9587</button></div>
+			<div class="boxes" id="boxes9"><p id="p9">Wienerwürstchen &nbsp &nbsp 2</p><button class="kreuzchen" id="kreuzchen9">&#9587</button></div>
+			<div class="boxes" id="boxes10"><p id="p10">Hackfleisch &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2.5</p><button class="kreuzchen" id="kreuzchen10">&#9587</button></div>
+			<div class="boxes" id="boxes11"><p id="p11">Pfeffer &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen11">&#9587</button></div>
+			<div class="boxes" id="boxes12"><p id="p12">Oregano &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen12">&#9587</button></div>
+			<div class="boxes" id="boxes13"><p id="p13">Basilikum &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen13">&#9587</button></div>
+			<div class="boxes" id="boxes14"><p id="p14">Salz &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen14">&#9587</button></div>
+			<div class="boxes" id="boxes15"><p id="p15">Paprika &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0.5</p><button class="kreuzchen" id="kreuzchen15">&#9587</button></div>
+			<div class="boxes" id="boxes16"><p id="p16">Ananas &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3</p><button class="kreuzchen" id="kreuzchen16">&#9587</button></div>
+			<div class="boxes" id="boxes17"><p id="p17">Tomaten &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2</p><button class="kreuzchen" id="kreuzchen17">&#9587</button></div>
+			<div class="boxes" id="boxes18"><p id="p18">Zwiebeln &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1.5</p><button class="kreuzchen" id="kreuzchen18">&#9587</button></div>
+			<div class="boxes" id="boxes19"><p id="p19">Brokkoli &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1</p><button class="kreuzchen" id="kreuzchen19">&#9587</button></div>
+			<div class="boxes" id="boxes20"><p id="p20">Oliven &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1</p><button class="kreuzchen" id="kreuzchen20">&#9587</button></div>
+			<div class="boxes" id="boxes21"><p id="p21">Champignons &nbsp &nbsp &nbsp 3.5</p><button class="kreuzchen" id="kreuzchen21">&#9587</button></div>
+			<div class="boxes" id="boxes22"><p id="p22">Steinpilze &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4</p><button class="kreuzchen" id="kreuzchen22">&#9587</button></div>
+			<div class="boxes" id="boxes23"><p id="p23">Thunfisch &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4.5</p><button class="kreuzchen" id="kreuzchen23">&#9587</button></div>
+			<div class="boxes" id="boxes24"><p id="p24">Shrimps &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4.5</p><button class="kreuzchen" id="kreuzchen24">&#9587</button></div>
+			<div class="boxes" id="boxes25"><p id="p25">Miesmuscheln &nbsp &nbsp &nbsp &nbsp 5</p><button class="kreuzchen" id="kreuzchen25">&#9587</button></div>
+	</div>
+	</center>
+		<div class="kosten">
+				<div style="float: left;">deine eigene Pizza kostet: </div>
+				<div id="eigenePizzaKosten"></div>
+		</div>
+	
+	</div>
+	</center>
+	<br><br>
+		<img class="images" id="bild0" src="img/Selbstmachpizza/grundgerüst.png">
+		<img class="images" id="bild1" src="img/Selbstmachpizza/tomatenpüree.png">
+		<img class="images" id="bild2" src="img/Selbstmachpizza/bärlauchpesto.png">
+		<img class="images" id="bild3" src="img/Selbstmachpizza/mozerella.png">
+		<img class="images" id="bild4" src="img/Selbstmachpizza/emmentaler.png">
+		<img class="images" id="bild5" src="img/Selbstmachpizza/edamer.png">
+		<img class="images" id="bild6" src="img/Selbstmachpizza/parmesan.png">
+		<img class="images" id="bild7" src="img/Selbstmachpizza/schinken.png">
+		<img class="images" id="bild8" src="img/Selbstmachpizza/salami.png">
+		<img class="images" id="bild9" src="img/Selbstmachpizza/wienerwürstchen.png">
+		<img class="images" id="bild10" src="img/Selbstmachpizza/hackfleisch.png">
+		<img class="images" id="bild11" src="img/Selbstmachpizza/pfeffer.png">
+		<img class="images" id="bild12" src="img/Selbstmachpizza/oregano.png">
+		<img class="images" id="bild13" src="img/Selbstmachpizza/basilikum.png">
+		<img class="images" id="bild14" src="img/Selbstmachpizza/salz.png">
+		<img class="images" id="bild15" src="img/Selbstmachpizza/paprika.png">
+		<img class="images" id="bild16" src="img/Selbstmachpizza/ananas.png">
+		<img class="images" id="bild17" src="img/Selbstmachpizza/tomaten.png">
+		<img class="images" id="bild18" src="img/Selbstmachpizza/zwiebeln.png">
+		<img class="images" id="bild19" src="img/Selbstmachpizza/brokkoli.png">
+		<img class="images" id="bild20" src="img/Selbstmachpizza/oliven.png">
+		<img class="images" id="bild21" src="img/Selbstmachpizza/champignons.png">
+		<img class="images" id="bild22" src="img/Selbstmachpizza/steinpilze.png">
+		<img class="images" id="bild23" src="img/Selbstmachpizza/thunfisch.png">
+		<img class="images" id="bild24" src="img/Selbstmachpizza/shrimps.png">
+		<img class="images" id="bild25" src="img/Selbstmachpizza/miesmuscheln.png">
+	
+	<div class="knöpfe">
+	
+		<button class="auswahl" id="sauce">Sauce</button>
+		<button class="auswahl" id="käse" >Käse</button>
+		<button class="auswahl" id="fleisch">Fleisch</button>
+		<button class="auswahl" id="gewürze" >Gewürze</button>
+		<button class="auswahl" id="obst">Obst & Gemüse</button>
+		<button class="auswahl" id="pilze">Pilze</p>
+		<button class="auswahl" id="meeresfrüchte">Meeresfrüchte</button>
+	</div>	
+	<div class="tabellen">
+	<table class="saucen">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="tomatenpüree">Tomatenpüree</button>
+					<button class="loe" id="loe11">Tomatenpüree</button>
+				</td>
+				<td>
+					<button class="zutaten" id="bärlauchpesto">Bärlauchpesto</button>
+					<button class="loe" id="loe22">Bärlauchpesto</button>
+				</td>	
+			</tr>
+		</tbody>
+	</table>
+	<table class="käsesorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="mozarella">Mozarella</button>
+					<button class="loe" id="loe33">Mozarella</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="emmentaler">Emmentaler</button>
+					<button class="loe" id="loe44">Emmentaler</button>
+				</td>
+				<td>
+					<button class="zutaten" id="edamer">Edamer</button>
+					<button class="loe" id="loe55">Edamer</button>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<button class="zutaten" id="parmesan">Parmesan</button>
+					<button class="loe" id="loe66">Parmesan</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="fleischsorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="schinken">Schinken</button>
+					<button class="loe" id="loe77">Schinken</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="salami">Salami</button>
+					<button class="loe" id="loe88">Salami</button>
+				</td>
+				<td>
+					<button class="zutaten" id="wienerwürstchen">Wienerwürstchen</button>
+					<button class="loe" id="loe99">Wienerwürstchen</button>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<button class="zutaten" id="hackfleisch">Hackfleisch</button>
+					<button class="loe" id="loe1010">Hackfleisch</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="gewürzsorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="pfeffer">Pfeffer</button>
+					<button class="loe" id="loe1111">Pfeffer</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="oregano">Oregano</button>
+					<button class="loe" id="loe1212">Oregano</button>
+				</td>
+				<td>
+					<button class="zutaten" id="basilikum">Basilikum</button>
+					<button class="loe" id="loe1313">Basilikum</button>
+				</td>	
+			</tr>
+			<tr>
+				<td>
+					<button class="zutaten" id="salz">Salz</button>
+					<button class="loe" id="loe1414">Salz</button>
+				</td>
+				<td>
+					<button class="zutaten" id="paprika">Paprika</button>
+					<button class="loe" id="loe1515">Paprika</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="gemüsesorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="ananas">Ananas</button>
+					<button class="loe" id="loe1616">Ananas</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="tomaten">Tomaten</button>
+					<button class="loe" id="loe1717">Tomaten</button>
+				</td>
+				<td>
+					<button class="zutaten" id="zwiebeln">Zwiebeln</button>
+					<button class="loe" id="loe1818">Zwiebeln</button>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<button class="zutaten" id="brokkoli">Brokkoli</button>
+					<button class="loe" id="loe1919">Brokkoli</button>
+				</td>
+				<td>
+					<button class="zutaten" id="oliven">Oliven</button>
+					<button class="loe" id="loe2020">Oliven</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="pilzsorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="champignons">Champignons</button>
+					<button class="loe" id="loe2121">Champignons</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="steinpilze">Steinpilze</button>
+					<button class="loe" id="loe2222">Steinpilze</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="meeresfruchtsorten">
+		<tbody>
+			<tr>
+				<td>
+					<button class="zutaten" id="thunfisch">Thunfisch</button>
+					<button class="loe" id="loe2323">Thunfisch</button>
+				
+				</td>
+				<td>
+					<button class="zutaten" id="shrimps">Shrimps</button>
+					<button class="loe" id="loe2424">Shrimps</button>
+				</td>
+				<td>
+					<button class="zutaten" id="miesmuscheln">Miesmuscheln</button>
+					<button class="loe" id="loe2525">Miesmuscheln</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

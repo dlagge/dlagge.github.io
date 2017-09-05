@@ -1,0 +1,404 @@
+body{
+	background-image: url(img/res-min.jpg);
+	background-repeat: no-repeat;
+	background-size: 150em;
+	background-position: top center; 
+	max-width: 2500px;
+	margin: auto;
+
+}
+
+.bu {
+	font-size: 30px;
+	background: #bd7272;
+	border: 3px solid white;
+	border-radius: 10px;
+	color: white;
+	width: 60px;
+	padding: 10px;
+	
+}
+
+h1{
+	font-size: 5em;
+	font-family: French Script MT, sans-serif;
+	text-align: center;
+	color: #bd7272;
+	max-padding: 2em;
+	padding-top: 1.5em;
+}
+
+
+
+h2{
+	color: #ea8d8d;
+	font-family: Calibri Light;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+		
+}
+
+hr{
+	margin-bottom: 20px;
+}
+
+
+.zeitenbox{
+	width: 9em;
+	height: 19em;
+	background-color: white;
+	opacity: 0.9;
+	border-radius: 20px;
+	margin: auto;
+	padding: 5px 30px 30px 30px;
+
+}
+
+.zeitenbox:hover{
+	opacity: 0.95;
+}
+
+h3{
+	color: #ea8d8d;
+	font-family: Calibri Light;
+	font-size: 1.5em;
+	line-height: 27px;
+	margin: auto;
+	text-align: center;	
+}
+
+.button {
+	margin-top: 60px;
+	width: 130px;
+	height: 130px;
+	color: #ea8d8d; 
+	background: linear-gradient(-20deg, #a9a9a9, white);  
+	border: solid 2px ##ea8d8d;
+	border-radius: 100px;
+	font-size:30px;
+	font-family: Calibri Light;
+	font-weight: bold;
+	text-align: center;
+	line-height: 120px;
+	
+}
+
+.button:hover {
+	transform: scale(1.1);
+	transition: ease-in-out all 800ms;
+}
+
+	
+table{
+	margin-top: 730px;
+}
+
+h4{
+	color: #a9a9a9;
+	font-family: Calibri Light;
+	font-size: 20px;
+	text-align: center;
+	margin: -10px;
+}
+		
+img{
+	width: 100%;
+    	max-width:479px;
+	opacity: 0.8;
+	
+}
+
+
+img:hover{
+		-moz-box-shadow: 0 0 10px #ccc;
+		-webkit-box-shadow: 0 0 10px #ccc;
+		box-shadow: 0px 0px 10px #ccc;
+		opacity: 1;
+}
+		
+
+.hinzu{
+	padding: 5px 10px;
+	width: 120px;
+	color: #a9a9a9; 
+	background-color: #fdfdfd; 
+	border: solid 3px #a9a9a9;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: Calibri Light;
+	letter-spacing: 1px;
+	transition: ease-in-out all 400ms;
+	
+}
+
+.hinzu:hover {
+	color: #fdfdfd;
+	background-color: #a9a9a9;
+
+}
+
+.del {
+	
+	padding: 5px 10px;
+	width: 120px;
+	color: white; 
+	background-color: #f7bf9a; 
+	border: solid 3px #a9a9a9;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: Calibri Light;
+	letter-spacing: 1px;
+	transition: ease-in-out all 400ms;
+}
+
+.del:hover {
+	color: #fdfdfd;
+	background-color: #a9a9a9;
+
+}
+
+.stuck {
+	max-width: 180px;
+	margin-bottom: -300px;
+}
+
+
+
+.lol {
+	margin-bottom: 173px;
+}
+
+h6 {
+	color: #a9a9a9;
+	font-family: Calibri Light;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	margin-left: 16px;
+}
+
+.count {
+	width: 30px;
+	height: 200px;
+	margin-top: 5px;
+}
+
+.plus {
+	width: 0px;
+	height: 0px;
+	-webkit-transform:rotate(360deg);
+	border-style: solid;
+	border-width: 0 20px 34.6px 20px;
+	border-color: transparent transparent #b0b0b0 transparent;
+	margin-top: -20px;
+	margin-bottom: 40px;
+	
+}
+
+.minus {
+	width: 0px;
+	height: 0px;
+	-webkit-transform:rotate(360deg);
+	border-style: solid;
+	border-width: 34.6px 20px 0 20px;
+	border-color: #b0b0b0 transparent transparent transparent;	
+}
+
+.plus:hover {
+	border-color: transparent transparent #f7bf9a transparent;	
+}
+.minus:hover {
+	border-color:  #f7bf9a transparent transparent transparent;
+}
+
+.gestalten{
+	padding: 10px 10px;
+	width: 250px;
+	color: #c77b7b; 
+	background-color: #fdfdfd; 
+	border: solid 3px #c77b7b;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: Calibri Light;
+	letter-spacing: 1px;
+	transition: ease-in-out all 400ms;
+	left: auto;
+	
+}
+
+.gestalten:hover {
+	color: #fdfdfd;
+	background-color: #c77b7b;
+
+}
+
+#oben{
+	background: white;
+	padding: 8px;
+	border: 2px dashed grey;
+	font-family: Calibri Light;
+	font-size: 18px;
+	color: grey;
+}
+
+.oben {
+	
+	opacity: 0.8;
+	margin-bottom: 50px;
+	
+}
+
+.oben:hover {
+	transform: scale(1.1);
+	transition: ease-in-out all 800ms;
+	opacity: 1;
+}
+
+
+td{
+	height: 700px;
+}
+
+.ordner{
+	border: 1px solid white;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	background: white;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 38px;
+	padding-right: 38px;
+	color: #ea8d8d;
+	float: left;
+	font-weight: bold;
+	font-size: 1.4em;
+	font-family: Calibri Light;
+	
+}
+
+.ordner:hover{
+	background: #fff5ef;
+}
+
+
+.speisekarte{
+	margin-top: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -160px;
+	
+	
+}
+
+h5:hover{
+	color:#ffc2c2;
+	box-shadow: 0px 17px 10px -10px;
+}
+
+
+}
+
+
+header{	
+	font-size: 1.2em;
+	font-family: Calibri Light;
+	width: 40%;
+}
+
+
+nav ul li{
+	float: left;
+	background: #fff1eb;
+	opacity: 40%;
+	list-style: none;
+		
+}
+
+
+nav ul li a{
+	color: #ea8d8d;
+	padding: 1em;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	
+	
+}
+
+.sub {
+	
+	
+	display: none;
+}
+
+.sub li a{
+	display: block;
+}
+
+
+@media 
+only screen and (max-width: 800px){
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		
+	}
+	
+	header {
+		font-size: 20px;
+	}
+	
+	
+	ul {
+		position: static; 
+		display: table;
+	}
+	
+	li {
+		margin-bottom: 5px;
+		
+	}
+	
+	
+	ul, li, li a{
+		width: 90%;
+		
+		
+	}
+	
+	.sub {
+		position: relative;
+		
+		
+	}
+
+	body {
+		background: #f7ebe6;
+		max-width: 600px;
+	}
+
+	td {
+		height: 580px;
+	}
+
+	.stuck {
+		margin-top: -30px;
+	}
+ }	
+	
+
+
+
+
+
+
+
+

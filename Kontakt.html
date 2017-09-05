@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kontakt</title>
+		<link href="style3.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<script>
+		
+			function initMap() {
+ 			var uluru = {lat: 47.389909, lng: 8.327797};
+  			var map = new google.maps.Map(document.getElementById('map'), {
+    			zoom: 11,
+   			 center: uluru
+ 			 });
+ 			 var marker = new google.maps.Marker({
+   			 position: uluru,
+   			 map: map
+ 			 });
+			 }
+	
+		</script>
+
+		<center>
+		<h1>Kontakt</h1>
+
+		<div class="kontaktbox">
+		<h2>
+		<br>Domi's Backofen<br>Chraz, 5444 Künten<br>Email: domi's_backofen@gmail.com<br>Telefon: 056 496 62 83
+		</h2>
+		</div>
+	
+		<div id="map"></div>
+ 		</center>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFYCcQSlbipprI4r-_JDbZPGvtXis6eag&callback=initMap">
+		</script>

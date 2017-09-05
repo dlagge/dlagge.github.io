@@ -1,0 +1,53 @@
+body{
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #ffeded;
+}
+
+h1{
+	color: grey;
+	font-family: French Script MT, sans-serif;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+#map {
+	height: 500px;
+	width: 600px;
+  	max-width: 100%;
+	margin-bottom: 50px;
+ }
+
+.kontaktbox{
+	border: 2px dashed grey;
+	max-width: 500px;
+	margin: 50px;
+	color: grey;
+	font-family: Calibri Light;
+	font-size: 0.85em;
+	background: white;
+	padding: 0 10px 30px 10px;
+	line-height: 1.5;
+	
+}
+
+.kontaktbox:hover{
+	opacity: 0.95;
+}
+
+
+@media 
+only screen and (max-width: 450px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	.kontaktbox{
+		font-size: 10px;
+	}
+
+
+
+
+
+
+
+
+

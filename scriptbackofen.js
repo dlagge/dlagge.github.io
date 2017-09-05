@@ -1,7 +1,7 @@
 $(function() {
 
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		$("body").css({"max-width": "800px"});
+	if($(window).width() >= 1024){
+		$("body").css("max-width", "800");
 	}
 
 

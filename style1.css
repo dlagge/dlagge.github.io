@@ -8,6 +8,8 @@ body{
 
 }
 
+
+
 .bu {
 	font-size: 30px;
 	background: #bd7272;
@@ -16,6 +18,7 @@ body{
 	color: white;
 	width: 60px;
 	padding: 10px;
+	margin-top: 20px;
 	
 }
 
@@ -345,7 +348,7 @@ nav ul li a{
 
 
 @media 
-only screen and (max-width: 800px){
+only screen and (max-width: 1080px){
 
 	table, thead, tbody, th, td, tr { 
 		display: block; 
